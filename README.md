@@ -29,36 +29,80 @@ This repository contains example code which you can run and play around with. **
 ### Topic 3: JavaScript
 
 1. [**basic-javascript**](./example-3-1-basic-javascript/): Shows off some basic JavaScript code, focusing on how to import script files, and when various JavaScript code will be executed.
+展示了一些基础 JavaScript 代码，重点介绍如何导入脚本文件，以及各种 JavaScript 代码的执行时机。
+
 
 2. [**modifying-elements-with-js**](./example-3-2-modifying-elements-with-js/): Shows how we can use `document.querySelector()` to find HTML elements on a page, then modify various properties of those elements such as `innerHTML`, `style`, and `src`. Also contains an example of a JavaScript function which takes some input arguments and returns a value.
+[使用 JS 修改元素]：展示如何使用 document.querySelector() 查找页面上的 HTML 元素，并修改这些元素的各种属性（如 innerHTML、style 和 src）。还包含一个接收输入参数并返回值的 JavaScript 函数示例。
+
+
 
 3. [**simple-calculator**](./example-3-3-simple-calculator/): A simple HTML / JavaScript application that lets users enter two numbers in a pair of `<input>`s, then click a button to calculate and display the sum of those inputs.
+[简易计算器]：一个简单的 HTML / JavaScript 应用程序，允许用户在两个 <input> 框中输入两个数字，然后点击按钮计算并显示这些输入值的总和。
+
+
 
 4. [**conditionals**](./example-3-4-conditionals/): Shows off JavaScript `if`-`else` statements with an example application letting the user enter their age. A different message will be displayed to the user depending on the age they enter.
+[条件语句]：通过一个让用户输入年龄的示例程序展示 JavaScript 的 if-else 语句。根据用户输入的年龄，将向其显示不同的信息。
+
+
 
 5. [**creating-elements**](./example-3-5-creating-elements/): Shows how we can use `document.createElement()` to create any HTML element, then `appendChild()` to add it to our page. When the user clicks a button, a new `<li>` displaying a random number will be added to a `<ul>` which already exists on the page.
+[创建元素]：展示如何使用 document.createElement() 创建任何 HTML 元素，然后使用 appendChild() 将其添加到页面中。当用户点击按钮时，一个新的显示随机数字的 <li> 将被添加到页面上已有的 <ul> 列表中。
+
+
 
 6. [**loops**](./example-3-6-loops/): Contains examples of a couple of kinds of looping strategies in JavaScript. Uses a `for`-loop to create 100 new list items when the page first loads. Also uses `document.querySelectorAll()` to find all list items on a page, then uses the JavaScript array `forEach()` function to loop through and set each one to a random color.
+[循环]：包含几种 JavaScript 循环策略的示例。使用 for 循环在页面首次加载时创建 100 个新的列表项。还使用 document.querySelectorAll() 查找页面上的所有列表项，然后使用 JavaScript 数组的 forEach() 函数进行遍历并为每一项设置随机颜色。
+
+
 
 7. [**dynamic-click-handlers**](./example-3-7-dynamic-click-handlers/): Shows that we can add event handlers - such as for mouse clicks - to dynamically-generated HTML elements. This extends the previous example to allow users to individually change the color of each list item by clicking the individual item.
+[动态点击处理程序]：展示了我们可以为动态生成的 HTML 元素添加事件处理程序（例如鼠标点击）。这扩展了之前的示例，允许用户通过点击单个列表项来分别更改其颜色。
+
+
 
 8. [**js-objects**](./example-3-8-js-objects/): Shows a complex JavaScript object, representing a person. Shows how to access individual properties of that object - including _nested_ properties.
+[JS 对象]：展示了一个代表“人”的复杂 JavaScript 对象。演示了如何访问该对象的单个属性——包括“嵌套”属性。
+
+
 
 9. [**topic3-comprehensive**](./example-3-9-topic3-comprehensive/): Shows off many JavaScript fundamentals (and some HTML and CSS too), bundled into one simple website which displays personnel data. The data is created as an array of JavaScript objects, which is then iterated over and passed around to create various HTML table elements, displaying each person in its own table row. The functionality is broken down into several functions - showing how the use of functions, plus good code comments, can make each individual part of the code easier to understand.
+[主题 3 综合实例]：展示了许多 JavaScript 基础知识（以及一些 HTML 和 CSS），并集成到一个显示人员数据的简单网站中。数据以 JavaScript 对象数组的形式创建，然后通过遍历和传递这些数据来创建各种 HTML 表格元素，在各自的表格行中显示每个人。功能被拆分为多个函数——展示了如何通过使用函数以及良好的代码注释，使代码的每个独立部分都更容易理解
+
+
 
 ### Topic 4: Svelte
 
 1. [**intro-to-svelte**](./example-4-1-intro-to-svelte/): Contains basic Svelte examples, including components, props & exports, event handling, reactivity, styling, and logic blocks.
+[Svelte 入门]：包含基础 Svelte 示例，包括组件、属性(props)与导出、事件处理、响应式、样式和逻辑块。
+
+
 
 2. [**binding**](./example-4-2-binding/): Contains more advanced Svelte exmaples, including custom events and data binding.
+[绑定]：包含更高级的 Svelte 示例，包括自定义事件和数据绑定。
+
+
 
 3. [**stores**](./example-4-3-stores/): Contains examples showing how Svelte stores can be created and used. Stores are a great way to take certain application state "out of" the component hierarchy and share it amongst many different components, while maintaining reactivity. This example shows off both writable & derived stores, and the use of the `$` syntax to access and modify stores almost as if they were plain variables.
+[状态库 (Stores)]：包含展示如何创建和使用 Svelte stores 的示例。Stores 是将某些应用程序状态从组件层级中“提取出来”并在多个不同组件之间共享，同时保持响应式的极佳方式。本示例展示了可写 (writable) 和衍生 (derived) stores，以及使用 $ 语法像访问普通变量一样访问和修改 stores。
+
+
 
 4. [**multi-page-apps**](./example-4-4-multi-page-apps/): Contains examples showing how the SvelteKit filesystem-based router can be used to provide multi-page apps. Includes information on routes, file & directory structure, layouts and `<slot>`s, hyperlinks, route parameters, and more.
+[多页面应用]：包含展示如何使用基于文件系统的 SvelteKit 路由来构建多页面应用的示例。包括关于路由、文件和目录结构、布局 (layouts) 和插槽 (<slot>)、超链接、路由参数等信息。
+
+
 
 5. [**svelte-data-fetching-in-components**](./example-4-5-svelte-data-fetching-in-components/): Contains examples of how we can `fetch()` data from a server from within our Svelte components - both at component load time, or when our application state changes (using reactive statements).
+. [组件内的 Svelte 数据获取]：包含如何在 Svelte 组件内部从服务器 fetch() 获取数据的示例——既可以在组件加载时获取，也可以在应用程序状态改变时获取（使用响应式语句）。
+
+
 
 6. [**sveltekit-data-fetching**](./example-4-6-sveltekit-data-fetching/): Contains examples showing the _preferred_ method of data fetching using SvelteKit. We show how to write a `load()` function in `+layout.js` or `+page.js`, and how that data can then be accessed using a special `data` variable we declare in our `+layout.svelte` and `+page.svelte` components.
+[SvelteKit 数据获取]：包含展示使用 SvelteKit 获取数据的“首选”方法的示例。我们展示了如何在 +layout.js 或 +page.js 中编写 load() 函数，以及如何通过在我们声明的 +layout.svelte 和 +page.svelte 组件中使用特殊的 data 变量来访问这些数据。
+
+
 
 ### Topic 5: Node.js, Express, and APIs
 
