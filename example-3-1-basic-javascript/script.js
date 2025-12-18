@@ -82,9 +82,9 @@ button.addEventListener("click", handleButtonClick);
  * 我们不需要先定义并命名一个函数，而是直接在 addEventListener 调用中编写一个“匿名函数”。
  * 如果这个函数不需要在其他地方使用，这种方法会非常方便。
  */
-// button.addEventListener("click", function () {
-//   alert("你点击了我！");
-// });
+button.addEventListener("click", function () {
+  alert("你点击了我！");
+ });
 
 /**
  * 这是定义匿名函数的又一种方式 —— 这一次使用的是“箭头函数”语法。
@@ -93,4 +93,4 @@ button.addEventListener("click", handleButtonClick);
  *
  * 参考：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions
  */
-// button.addEventListener("click", () => alert("你点击了我！"));
+ button.addEventListener("click", () => alert("你点击了我！"));
