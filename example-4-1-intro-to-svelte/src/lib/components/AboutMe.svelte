@@ -25,3 +25,29 @@
     font-weight: bold;
   }
 </style>
+
+
+
+
+<script>
+  /**
+   * 欢迎来到你的第一个 Svelte 组件！
+   * * <script> 块中的代码会在组件首次加载时运行。
+   */
+
+  // "export let" 语法用于定义“属性 (Props)”。
+  // 外部组件在使用这个组件时，可以传递这些值。
+  export let name = "Andrew"; // 带有默认值的属性
+  export let interest;        // 必须由外部传递的属性
+</script>
+
+<h2>关于我</h2>
+
+<p>我的名字是 {name}，我喜欢 {interest}！</p>
+
+<style>
+  p {
+    color: green;
+    font-weight: bold;
+  }
+</style>
