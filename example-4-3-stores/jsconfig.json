@@ -1,0 +1,60 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": false,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"moduleResolution": "bundler"
+	}
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias and https://kit.svelte.dev/docs/configuration#files
+	//
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+}
+
+
+
+
+
+{
+    // 继承 SvelteKit 自动生成的配置。
+    // SvelteKit 会根据你的项目结构在 .svelte-kit 文件夹中动态生成一份基础配置。
+    "extends": "./.svelte-kit/tsconfig.json",
+
+    "compilerOptions": {
+        // 允许在项目中使用 .js 文件，而不仅仅是 .ts 文件。
+        "allowJs": true,
+
+        // 是否对 JS 文件进行类型检查。这里设置为 false，表示只对 TS 文件报错。
+        "checkJs": false,
+
+        // 允许使用 CommonJS 格式的模块（如 require）与 ES 模块（import）互操作。
+        "esModuleInterop": true,
+
+        // 强制文件名大小写一致（例如：避免在 Linux 上找不到名为 MyComponent.js 的文件）。
+        "forceConsistentCasingInFileNames": true,
+
+        // 允许直接导入 .json 文件作为对象使用。
+        "resolveJsonModule": true,
+
+        // 跳过对第三方库（node_modules）的类型检查，以提高编译速度。
+        "skipLibCheck": true,
+
+        // 生成源代码映射文件，方便在浏览器开发者工具中调试原始代码。
+        "sourceMap": true,
+
+        // 开启严格模式。这是推荐做法，它会强制执行更严谨的类型检查（如不允许隐式的 any 类型）。
+        "strict": true,
+
+        // 指定模块解析策略。使用 "bundler" 是现代前端构建工具（如 Vite）的标准做法。
+        "moduleResolution": "bundler"
+    }
+    // 路径别名（如 $lib）由 SvelteKit 统一处理。
+    // 如果你想覆盖 include 或 exclude 规则，请务必从继承的文件中复制相关项，
+    // 因为 TypeScript 不会自动合并这些数组。
+}
